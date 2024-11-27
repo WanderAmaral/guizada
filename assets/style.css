@@ -115,6 +115,7 @@ h1 {
 .container-topics a {
   color: #ffffff;
   font-size: 30px;
+  text-decoration: none;
 }
 
 .container-topics div {
@@ -123,6 +124,7 @@ h1 {
 
 .container-topics div:hover a {
   color: #2196f3;
+  text-decoration: none;
 }
 
 .container-topics div:hover::after {
