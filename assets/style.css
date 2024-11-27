@@ -60,14 +60,9 @@ h1 {
 }
 
 .img-section2 {
-  position: absolute;
-  left: 0;
-  bottom: 10;
-  width: auto;
-  max-width: 100%;
   height: auto;
   object-fit: contain;
-  opacity: 0.2;
+
   z-index: -1;
 }
 
@@ -177,11 +172,20 @@ h1 {
   border-radius: 2px;
 }
 .content-homepage {
-  max-width: 1100px;
   margin: auto;
   padding-top: 20px;
   z-index: 100;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.content-mid-section {
+  max-width: 600px;
+}
+.content-mid-section p {
+  text-align: justify;
 }
 
 .content-homepage p {
