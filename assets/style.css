@@ -87,9 +87,10 @@ h1 {
   gap: 16px;
   z-index: 10;
   position: relative;
+  margin-top: -100px;
 }
 
-.container-topics p{
+.container-topics p {
   color: #ffffff;
 }
 
@@ -113,7 +114,7 @@ h1 {
 
 .container-topics a {
   color: #ffffff;
-  font-size: 30px;
+  font-size: 26px;
   text-decoration: none;
 }
 
@@ -137,6 +138,16 @@ h1 {
   margin: 0 auto;
   background-color: #ccc;
   border-radius: 2px;
+}
+.content-homepage {
+  max-width: 1100px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.content-homepage p {
+  color: #ffffff;
+  font-size: 20px;
 }
 
 @media (max-width: 1224px) {
