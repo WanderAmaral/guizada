@@ -26,6 +26,15 @@ h1 {
   color: #ffffff;
 }
 
+.img-section {
+  height: 100%;
+  width: 900px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+}
+
 .container-home-page {
   height: 100vh;
   gap: 16px;
@@ -42,7 +51,6 @@ h1 {
   gap: 16px;
   display: flex;
   margin: auto;
-
   z-index: 1;
   justify-content: center;
   flex-direction: column;
@@ -70,26 +78,77 @@ h1 {
   position: relative;
 }
 
-.img-section {
-  height: 100%;
-  width: 900px;
+.container-topics {
+  max-width: 1100px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: -200px;
+  z-index: 10;
+  position: relative;
+}
+
+.container-topics p{
+  color: #ffffff;
+}
+
+.container-topics div {
+  position: relative;
+  padding: 16px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.container-topics div::after {
+  content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  object-fit: cover; 
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2196f3;
+  transition: width 0.3s ease;
+}
+
+.container-topics a {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.container-topics div {
+  text-align: left;
+}
+
+.container-topics div:hover a {
+  color: #2196f3;
+}
+
+.container-topics div:hover::after {
+  width: 100%;
+}
+
+.separator {
+  padding: 0 !important;
+  width: 2px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #ccc;
+  border-radius: 2px;
 }
 
 @media (max-width: 1224px) {
   .img-section {
-    width: 600px; 
-    height: auto; 
+    width: 600px;
+    height: auto;
   }
 }
 
 @media (max-width: 480px) {
   .img-section {
-    max-width: 400px; 
-    position: static; 
+    max-width: 400px;
+    position: static;
   }
 }
 
