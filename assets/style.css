@@ -15,7 +15,7 @@ h1 {
   z-index: 100;
   position: relative;
   padding-top: 20px;
-  background-color: #303030;
+  
 }
 
 .menu-items ul {
@@ -58,12 +58,12 @@ h1 {
   top: 0;
   right: 0;
   object-fit: cover;
+  z-index: 10;
 }
 
 .img-section2 {
   height: auto;
   object-fit: contain;
-
   z-index: -1;
 }
 
@@ -259,7 +259,8 @@ main {
   border-collapse: 2;
   margin-top: 20px;
 }
-th,td {
+th,
+td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
